@@ -1,176 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is memory game by html, css and java script"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Memory game</title>
+    <link rel="Shortcut Icon" type="image.png" href="Images/favican.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="this is memory game by html, css and java script">
-  <!-- css -->
-  <link rel="stylesheet" href="/css/main.css">
-  <title>Memory game</title>
-  <link rel="Shortcut Icon" type="image.png" href="Images/favican.png">
-</head>
+  <body>
+    <div class="cover-screen">
+      <button class="but">start game</button>
+    </div>
 
-<body>
-  <div class="cover-screen">
-    <button class="but">start game</button>
-  </div>
-
-  <!-- prompt board -->
-  <div class="prompt">
-    <p>User Name</p>
-    <form><input class="user-input" type="text"></form>
-    <div>
-      <button class="ok">OK</button>
-      <button class="cancle">cancle</button>
-    </div>
-  </div>
-  <!-- dash board  -->
-  <div class="user-info">
-    <div class="name">
-      Hello: <span></span>
-    </div>
-    <div class="trys">
-      Tries: <span>0</span>
-    </div>
-  </div>
-  <!--images-->
-  <div class="main-container">
-    <div class="block" data-character="cipher">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/bill-cipher.png" alt="image">
+    <!-- prompt board -->
+    <div class="prompt">
+      <p>User Name</p>
+      <form><input class="user-input" type="text" /></form>
+      <div>
+        <button class="ok">OK</button>
+        <button class="cancle">cancle</button>
       </div>
     </div>
-    <div class="block" data-character="cipher">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/bill-cipher.png" alt="image">
+    <!-- dash board  -->
+    <div class="user-info">
+      <div class="name">Hello: <span></span></div>
+      <div class="trys">Tries: <span>0</span></div>
+    </div>
+    <!--images-->
+    <div class="main-container">
+      <div class="block" data-character="cipher">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/bill-cipher.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="cipher">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/bill-cipher.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="brave">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/brave.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="brave">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/brave.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="brutus">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/brutus.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="brutus">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/brutus.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="cheburashka">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/cheburashka.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="cheburashka">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/cheburashka.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="finn">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/finn.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="finn">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/finn.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="genie">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/genie.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="genie">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/genie.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="ice-king">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/ice-king.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="ice-king">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/ice-king.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="jake">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/jake.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="jake">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/jake.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="ninja">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/ninja-turtle.png"
+            alt="ninja"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="ninja">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/ninja-turtle.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="block" data-character="popeye">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/popeye.png"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="block" data-character="popeye">
+        <div class="front face"></div>
+        <div class="back face">
+          <img
+            src="https://img.icons8.com/stickers/400/null/popeye.png"
+            alt="image"
+          />
+        </div>
       </div>
     </div>
     <!--  -->
-    <div class="block" data-character="brave">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/brave.png" alt="image">
-
-      </div>
-    </div>
-    <div class="block" data-character="brave">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/brave.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="brutus">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/brutus.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="brutus">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/brutus.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="cheburashka">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/cheburashka.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="cheburashka">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/cheburashka.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="finn">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/finn.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="finn">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/finn.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="genie">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/genie.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="genie">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/genie.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="ice-king">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/ice-king.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="ice-king">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/ice-king.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="jake">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/jake.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="jake">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/jake.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="ninja">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/ninja-turtle.png" alt="ninja">
-      </div>
-    </div>
-    <div class="block" data-character="ninja">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/ninja-turtle.png" alt="image">
-      </div>
-    </div>
-    <!--  -->
-    <div class="block" data-character="popeye">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/popeye.png" alt="image">
-      </div>
-    </div>
-    <div class="block" data-character="popeye">
-      <div class="front face"></div>
-      <div class="back face">
-        <img src="https://img.icons8.com/stickers/400/null/popeye.png" alt="image">
-      </div>
-    </div>
-  </div>
-  <!--  -->
-  <audio id="succes" src="/sound/message-124468.mp3" preload="auto"></audio>
-  <audio id="fail" src="/sound/click-for-game-menu-131903.mp3" preload="auto"></audio>
-  <script src="JS/main.js"></script>
-</body>
-
+    <audio id="succes" src="/sound/message-124468.mp3" preload="auto"></audio>
+    <audio
+      id="fail"
+      src="/sound/click-for-game-menu-131903.mp3"
+      preload="auto"
+    ></audio>
+    <script src="./JS/main.js"></script>
+  </body>
 </html>
